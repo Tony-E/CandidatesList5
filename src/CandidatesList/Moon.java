@@ -5,7 +5,7 @@ package CandidatesList;
  * Class Moon is the Moon. Methods are provided to get the Phase of the Moon and 
  * its angular distance from another object.
  * 
- * Based on MiniMoon in Astronomy on the Personal Computer,  O. Montenbruck & T. Pfleger,
+ * Based on MiniMoon in Astronomy on the Personal Computer,  O. Montenbruck and T. Pfleger,
  * Springer, 4th Ed. 2000.
  *
  * @author Tony Evans

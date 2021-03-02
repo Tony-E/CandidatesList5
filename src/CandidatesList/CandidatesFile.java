@@ -191,7 +191,7 @@ public class CandidatesFile implements Serializable {
     /**
      * Find the candidate with this name if it already exists otherwise provide a new candidate record.
      * @param n Name of candidate.
-     * @para add True= if candidate not already in list, add it.
+     * @param add True= if candidate not already in list, add it.
      * @return The requested candidate or a new empty candidate.
      */
     public Candidate find(String n, Boolean add) {
