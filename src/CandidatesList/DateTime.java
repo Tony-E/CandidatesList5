@@ -177,9 +177,27 @@ public class DateTime implements Serializable {
             return f2.format(jHour)+":"+f2.format(jMinute);
         }
         return "fmt?";
-   
     }
-   
+    
+    /** getHours returns an integer number of hours.
+     * 
+     * @return Hours part of the time.
+     */
+    public int getHours() {
+        if (!isSet) {setGregorian();}
+        return (int) jHour;
+    }
+    
+    
+    /**
+     * getMinutes returns an integer number of minutes.
+     * @return Minutes part of the time.
+     */
+    public int getMinutes() {
+        if (!isSet) {setGregorian();}
+        return (int) jMinute;
+        }
+        
     /**
      * getMPCDate() return date in format used by MPC queries. Note the extra blank when the day is a single figure.
      * but this extra blank seems to be inconsistent so we have 2 flavours.

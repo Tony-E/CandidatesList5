@@ -61,7 +61,7 @@ public class Observatories {
     
     /**
      * Set the observatory variables based on an index.
-     * @param int Observatory number.
+     * @param index Observatory number.
      */
     public void setObservatory(int index) {
         position.coord[0]=pi2*longs[index]/360;

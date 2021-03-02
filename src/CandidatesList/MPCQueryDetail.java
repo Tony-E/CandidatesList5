@@ -61,7 +61,10 @@ public class MPCQueryDetail {
         
         // followed by the date, number of dates and interval
         query+="&d=JD+"+tFrom.getJdate();
-        query+="&l=10&i=30&u=m&uto=0";
+        int lineCount = (int) (48 * (tTo.julian - tFrom.julian));
+        String lines = String.valueOf(lineCount);
+        query+="&l="+lines;
+        query+="&i=30&u=m&uto=0";
         query+="&c="+obs;
         
         // followed by the rest of the query text

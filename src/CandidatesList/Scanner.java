@@ -62,7 +62,7 @@ import javax.swing.SwingWorker;
     private final static String SormanoTxt =  "http://www.brera.mi.astro.it/sormano/Observable.txt";
       
       // ESA file grabber addresses
-    private final static String Baseurl =     "http://neo.ssa.esa.int/PSDB-portlet/download?file=";
+    private final static String Baseurl =     "https://neo.ssa.esa.int/PSDB-portlet/download?file=";
     private final static String RiskList =    "esa_risk_list";
     private final static String PriList =     "esa_priority_neo_list";
     private final static String Recent =      "esa_recent_close_app";
@@ -672,7 +672,7 @@ import javax.swing.SwingWorker;
         c.NEO = b==2048;
         b = bits & 4096;
         c.kmplus = b==4096;
-        b = bits & 16384;
+        b = bits & 32768;
         c.PHA = b==32768;
 
         /* get orbital elements */
